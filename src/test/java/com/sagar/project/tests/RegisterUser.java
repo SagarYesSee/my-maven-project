@@ -34,7 +34,7 @@ public class RegisterUser extends BaseTest {
 
         Assert.assertTrue(signup.isSignupHeaderDisplayed(), "Signup header should be displayed");
 
-        signup.signup("Sagar", "sagarsc003@gmail.com");
+        signup.signup("Sagar", "sagarsc" + System.currentTimeMillis() + "@gmail.com");
 
         signup.clickSignup();
 

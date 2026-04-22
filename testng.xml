@@ -3,6 +3,7 @@
     <test name="AutomationExercise">
         <classes>
             <class name="com.sagar.project.tests.RegisterUser"/>
+            <class name="com.sagar.project.tests.LoginTest"/>
         </classes>
     </test>
 </suite>

@@ -7,6 +7,7 @@ public class LoginPage {
 
     private WebDriver driver;
 
+    private By loginHeader = By.xpath("//h2[text()='Login to your account']");
     private By emailLogin = By.cssSelector("input[data-qa='login-email']");
     private By passwordField = By.cssSelector("input[data-qa='login-password']");
     private By loginButton = By.xpath("//button[text()='Login']");
@@ -36,6 +37,18 @@ public class LoginPage {
 
     public String getErrorMessage() {
         return driver.findElement(errorMessage).getText();
+    }
+
+    public boolean isLoginHeaderDisplayed() {
+        return driver.findElement(loginHeader).isDisplayed();
+    }
+
+    public boolean isErrorMessageDisplayed() {
+        return driver.findElement(errorMessage).isDisplayed();
+    }
+
+    public boolean isLoggedInAsDisplayed() {
+        return driver.findElement(By.xpath("//a[contains(text(),'Logged in as')]")).isDisplayed();
     }
 
 }
