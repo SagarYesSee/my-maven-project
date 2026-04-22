@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-22T11:49:36 IST" name="TestSuite" finished-at="2026-04-22T11:49:56 IST" duration-ms="19836">
+  <suite started-at="2026-04-22T13:05:40 IST" name="TestSuite" finished-at="2026-04-22T13:06:12 IST" duration-ms="31762">
     <groups>
     </groups>
-    <test started-at="2026-04-22T11:49:36 IST" name="AutomationExercise" finished-at="2026-04-22T11:49:56 IST" duration-ms="19836">
+    <test started-at="2026-04-22T13:05:40 IST" name="AutomationExercise" finished-at="2026-04-22T13:06:12 IST" duration-ms="31762">
       <class name="com.sagar.project.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.sagar.project.tests.LoginTest@77167fb7]" started-at="2026-04-22T11:49:36 IST" name="setup" finished-at="2026-04-22T11:49:45 IST" duration-ms="8729" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sagar.project.tests.LoginTest@56a6d5a6]" started-at="2026-04-22T13:05:55 IST" name="setup" finished-at="2026-04-22T13:06:02 IST" duration-ms="6816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:com.sagar.project.tests.LoginTest@77167fb7]" started-at="2026-04-22T11:49:45 IST" name="testInvalidLogin" description="Test Case 3: Login with invalid credentials
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.sagar.project.tests.LoginTest@56a6d5a6]" started-at="2026-04-22T13:06:02 IST" name="testInvalidLogin" description="Test Case 3: Login with invalid credentials
 1. Launch browser
 2. Navigate to url
 3. Verify home page visibility
@@ -19,11 +19,11 @@
 5. Verify &#039;Login to your account&#039; visibility
 6. Enter incorrect email/password
 7. Click Login
-8. Verify &#039;Please enter correct email or password&#039; error message" finished-at="2026-04-22T11:49:48 IST" duration-ms="2738" status="PASS">
+8. Verify &#039;Please enter correct email or password&#039; error message" finished-at="2026-04-22T13:06:04 IST" duration-ms="2336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testUserLogin()[pri:0, instance:com.sagar.project.tests.LoginTest@77167fb7]" started-at="2026-04-22T11:49:48 IST" name="testUserLogin" description="Test Case 2: Login with valid credentials
+        <test-method signature="testUserLogin()[pri:0, instance:com.sagar.project.tests.LoginTest@56a6d5a6]" started-at="2026-04-22T13:06:04 IST" name="testUserLogin" description="Test Case 2: Login with valid credentials
 1. Launch browser
 2. Navigate to url
 3. Verify home page visibility
@@ -33,15 +33,43 @@
 7. Click Login
 8. Verify &#039;Logged in as username&#039; visibility
 9. Click Logout
-10. Verify home page visibility" finished-at="2026-04-22T11:49:56 IST" duration-ms="7988" status="PASS">
+10. Verify home page visibility" finished-at="2026-04-22T13:06:11 IST" duration-ms="6939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sagar.project.tests.LoginTest@77167fb7]" started-at="2026-04-22T11:49:56 IST" name="tearDown" finished-at="2026-04-22T11:49:56 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sagar.project.tests.LoginTest@56a6d5a6]" started-at="2026-04-22T13:06:11 IST" name="tearDown" finished-at="2026-04-22T13:06:12 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.sagar.project.tests.LoginTest -->
+      <class name="com.sagar.project.tests.RegisterUser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sagar.project.tests.RegisterUser@1fe20588]" started-at="2026-04-22T13:05:40 IST" name="setup" finished-at="2026-04-22T13:05:46 IST" duration-ms="6510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserRegistration()[pri:0, instance:com.sagar.project.tests.RegisterUser@1fe20588]" started-at="2026-04-22T13:05:46 IST" name="testUserRegistration" description="Test Case 1: Register User Flow
+1. Launch browser
+2. Navigate to url
+3. Verify home page visibility
+4. Click Signup/Login
+5. Verify &#039;New User Signup!&#039; visibility
+6-7. Enter name/email and Signup
+8. Verify &#039;ENTER ACCOUNT INFORMATION&#039; visibility
+9-12. Fill details and checkboxes
+13. Click &#039;Create Account&#039;
+14. Verify &#039;ACCOUNT CREATED!&#039;
+15. Click &#039;Continue&#039;
+16. Verify &#039;Logged in as username&#039;
+17. Click &#039;Delete Account&#039;
+18. Verify &#039;ACCOUNT DELETED!&#039;" finished-at="2026-04-22T13:05:55 IST" duration-ms="8419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sagar.project.tests.RegisterUser@1fe20588]" started-at="2026-04-22T13:05:55 IST" name="tearDown" finished-at="2026-04-22T13:05:55 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sagar.project.tests.RegisterUser -->
     </test> <!-- AutomationExercise -->
   </suite> <!-- TestSuite -->
 </testng-results>
